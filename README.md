@@ -1,31 +1,61 @@
 # airbnb-clone-project
 The Airbnb Clone Project is a comprehensive, real-world application designed to simulate the development of a robust booking platform like Airbnb. It involves a deep dive into full-stack development, focusing on backend systems, database design, API development, and application security
 # Team Roles
-## Business analyst (BA)
-Understands customer’s business processes
-Translates customer business needs into requirements
-## Product owner (PO)
-Holds responsibility for a product vision and evolution
-Makes sure the final product meets customer requirements
-## Project manager (PM)
-Makes sure a product or its part is delivered on time and within budget
-Manages and motivates the software development team
-## UI/UX designer
-Transforms a product vision into user-friendly designs
-Creates user journeys for the best user experience and highest conversion rates
-## Software architect
-Designs a high-level software architecture
-Selects appropriate tools and platforms to implement the product vision
-Sets up code quality standards and performs code reviews
-## Software developer
-Engineers and stabilizes the product
-Solves any technical problems emerging during the development lifecycle
-## Quality assurance (QA) engineer
-Makes sure an application performs according to requirements
-Spots functional and non-functional defects
-## Test automation engineer
-Designs a test automation ecosystem
-Writes and maintains test scripts for automated testing
-DevOps engineer
-Facilitates cooperation between development and operations teams
-Builds continuous integration and continuous delivery (CI/CD) pipelines for faster delivery
+## Backend Developer:
+Responsible for implementing API endpoints, database schemas, and business logic.
+## Database Administrator:
+Manages database design, indexing, and optimizations.
+## DevOps Engineer:
+Handles deployment, monitoring, and scaling of the backend services.
+## QA Engineer:
+Ensures the backend functionalities are thoroughly tested and meet quality standards
+# Technology Stack
+## Django:
+A high-level Python web framework used for building the RESTful API.
+## Django REST Framework:
+Provides tools for creating and managing RESTful APIs.
+## PostgreSQL:
+A powerful relational database used for data storage.
+## GraphQL:
+Allows for flexible and efficient querying of data.
+## Celery:
+For handling asynchronous tasks such as sending notifications or processing payments.
+## Redis:
+Used for caching and session management.
+## Docker:
+Containerization tool for consistent development and deployment environments.
+## CI/CD Pipelines:
+Automated pipelines for testing and deploying code changes.
+# Database Design
+## Users
+
+GET /users/ - List all users
+POST /users/ - Create a new user
+GET /users/{user_id}/ - Retrieve a specific user
+PUT /users/{user_id}/ - Update a specific user
+DELETE /users/{user_id}/ - Delete a specific user
+## Properties
+
+GET /properties/ - List all properties
+POST /properties/ - Create a new property
+GET /properties/{property_id}/ - Retrieve a specific property
+PUT /properties/{property_id}/ - Update a specific property
+DELETE /properties/{property_id}/ - Delete a specific property
+## Bookings
+
+GET /bookings/ - List all bookings
+POST /bookings/ - Create a new booking
+GET /bookings/{booking_id}/ - Retrieve a specific booking
+PUT /bookings/{booking_id}/ - Update a specific booking
+DELETE /bookings/{booking_id}/ - Delete a specific booking
+## Payments
+
+POST /payments/ - Process a payment
+## Reviews
+
+GET /reviews/ - List all reviews
+POST /reviews/ - Create a new review
+GET /reviews/{review_id}/ - Retrieve a specific review
+PUT /reviews/{review_id}/ - Update a specific review
+DELETE /reviews/{review_id}/ - Delete a specific review
+
